@@ -11,7 +11,7 @@
 ---
 
 ### About This Program
-
+This is a mobile app built with Xamarin.Forms that can run on both Android and iOS systems. This is a mobile game app that tracks the accelerometer and gyroscope of the mobile device. Users can do jumping jacks with their mobile devices in hand and the app gives the users scores based on how well the users do jumping jacks.
 
 ---
 
