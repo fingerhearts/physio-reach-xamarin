@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dotnetfinal.DatabaseEntryPage">
+    <!--<StackLayout Margin="20" VerticalOptions="StartAndExpand">
+        <Label Text="UserID" />
+        <Entry Text="{Binding UserID}" />
+        <Label Text="MaxXMotion" />
+        <Entry Text="{Binding MaxXMotion}" />
+        <Label Text="MaxYMotion" />
+        <Entry Text="{Binding MaxYMotion}" />
+        <Label Text="MaxZMotion" />
+        <Entry Text="{Binding MaxZMotion}" />
+        <Label Text="IsCompleted" />
+        <Switch IsToggled="{Binding IsCompleted}" />
+        <Button Text="Save" Clicked="OnSaveButtonClicked" />
+        <Button Text="Delete" Clicked="OnDeleteButtonClicked" />
+    </StackLayout>-->
+
+   <StackLayout VerticalOptions="CenterAndExpand" Padding="5">  
+        <Entry x:Name="ActivityID" Placeholder="Activity ID" ></Entry>
+        <Entry x:Name="MaxXMotion" Placeholder="Max X Motion"></Entry>
+        <Entry x:Name="MaxYMotion" Placeholder="Max Y Motion"></Entry>  
+        <Entry x:Name="MaxZMotion" Placeholder="Max Z Motion"></Entry>  
+        <Switch IsToggled="{Binding IsCompleted}" />
+        <Button Text="Save" Clicked="OnSaveButtonClicked" />
+        <Button Text="Delete" Clicked="OnDeleteButtonClicked" />
+    </StackLayout>  
+</ContentPage>
