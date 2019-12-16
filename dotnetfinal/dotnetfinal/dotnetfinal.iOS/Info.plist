@@ -23,15 +23,15 @@
     <key>MinimumOSVersion</key>
     <string>8.0</string>
     <key>CFBundleDisplayName</key>
-    <string>dotnet_final</string>
+    <string>dotnetfinal</string>
     <key>CFBundleIdentifier</key>
-    <string>com.companyname.dotnet_final</string>
+    <string>com.companyname.dotnetfinal</string>
     <key>CFBundleVersion</key>
     <string>1.0</string>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
     <key>CFBundleName</key>
-    <string>dotnet_final</string>
+    <string>dotnetfinal</string>
     <key>XSAppIconAssets</key>
     <string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>

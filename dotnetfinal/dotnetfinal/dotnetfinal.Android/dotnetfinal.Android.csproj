@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{48A5289A-A90C-4A3C-B2A7-5BB5D453C9C1}</ProjectGuid>
+    <ProjectGuid>{DBE36546-91AE-42BB-BF27-F5FE68A45AF3}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>dotnet_final.Droid</RootNamespace>
-    <AssemblyName>dotnet-final.Android</AssemblyName>
+    <RootNamespace>dotnetfinal.Droid</RootNamespace>
+    <AssemblyName>dotnetfinal.Android</AssemblyName>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -89,10 +89,10 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\dotnet_final\dotnet_final.csproj">
-      <Project>{DFAFB11E-3EBC-416A-8F19-A7B51E2AB833}</Project>
-      <Name>dotnet_final</Name>
+    <ProjectReference Include="..\dotnetfinal\dotnetfinal.csproj">
+      <Project>{1A844AFD-5DA6-444A-AAD4-F568EF4B938B}</Project>
+      <Name>dotnetfinal</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+ <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

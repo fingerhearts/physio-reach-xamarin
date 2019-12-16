@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace dotnet_final.iOS
+namespace dotnetfinal.iOS
 {
     public class Application
     {

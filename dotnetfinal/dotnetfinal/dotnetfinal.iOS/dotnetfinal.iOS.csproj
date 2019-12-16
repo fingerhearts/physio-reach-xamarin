@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7BC08052-EA35-4036-AD98-DFE4A3D13349}</ProjectGuid>
+    <ProjectGuid>{6D82C6A0-679B-4E22-8918-ABE9F5B1514A}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>dotnet_final.iOS</RootNamespace>
+    <RootNamespace>dotnetfinal.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>dotnet-final.iOS</AssemblyName>
+    <AssemblyName>dotnetfinal.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
   </PropertyGroup>
@@ -125,9 +125,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\dotnet_final\dotnet_final.csproj">
-      <Project>{DFAFB11E-3EBC-416A-8F19-A7B51E2AB833}</Project>
-      <Name>dotnet_final</Name>
+    <ProjectReference Include="..\dotnetfinal\dotnetfinal.csproj">
+      <Project>{1A844AFD-5DA6-444A-AAD4-F568EF4B938B}</Project>
+      <Name>dotnetfinal</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace dotnet_final
+namespace dotnetfinal
 {
     public partial class App : Application
     {
