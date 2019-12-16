@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="dotnetfinal.Exercises.Exercise1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Exercise 1!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="LabelX"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Label x:Name="LabelY"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Label x:Name="LabelZ"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Label x:Name="LabelLength"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Button HorizontalOptions="Center"
+                Text="Start" 
+                VerticalOptions="Center" 
+                Clicked="StartButton"></Button>
+            <Button HorizontalOptions="Center"
+                Text="Stop" 
+                VerticalOptions="Center" 
+                Clicked="StopButton"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
