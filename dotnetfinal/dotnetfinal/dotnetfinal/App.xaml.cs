@@ -10,7 +10,7 @@ namespace dotnetfinal
         {
             InitializeComponent();
 
-            MainPage = new Exercises.Exercise1();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
