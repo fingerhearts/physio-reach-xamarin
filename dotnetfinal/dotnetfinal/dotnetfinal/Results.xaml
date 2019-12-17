@@ -14,12 +14,18 @@
             <Label x:Name="MaxHeight"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand"></Label>-->
-            <AbsoluteLayout>
+            <RelativeLayout>
                 <oxy:PlotView
                     Model="{Binding ScatteredModel}" 
                     AbsoluteLayout.LayoutBounds="10,10,.9,.9"
                     AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" />
-            </AbsoluteLayout>
+                <Label Text="This is the Results Page!"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="MaxHeight"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"></Label>
+            </RelativeLayout>
         <!--</StackLayout>-->
 
     </ContentPage.Content>
