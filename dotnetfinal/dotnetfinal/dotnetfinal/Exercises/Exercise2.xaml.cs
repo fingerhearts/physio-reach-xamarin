@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace dotnetfinal
+namespace dotnetfinal.Exercises
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page2 : ContentPage
+    public partial class Exercise2 : ContentPage
     {
-        public Page2()
+        public Exercise2()
         {
             InitializeComponent();
         }
