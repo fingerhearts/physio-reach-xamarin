@@ -23,7 +23,7 @@
         <Entry x:Name="MaxYMotion" Placeholder="Max Y Motion"></Entry>  
         <Entry x:Name="MaxZMotion" Placeholder="Max Z Motion"></Entry>  
         <Switch IsToggled="{Binding IsCompleted}" />
-        <Button Text="Save" Clicked="OnSaveButtonClicked" />
+        <Button x:Name="Hello" Text="Save" Clicked="OnSaveButtonClicked" />
         <Button Text="Delete" Clicked="OnDeleteButtonClicked" />
     </StackLayout>  
 </ContentPage>

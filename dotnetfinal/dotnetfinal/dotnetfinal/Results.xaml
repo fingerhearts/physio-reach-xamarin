@@ -3,17 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              mc:Ignorable="d"
              x:Class="dotnetfinal.Results">
     <ContentPage.Content>
-        <StackLayout>
+        <!--<StackLayout>
             <Label Text="This is the Results Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Label x:Name="MaxHeight"
                    VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"></Label>-->
+            <RelativeLayout>
+                <oxy:PlotView
+                    Model="{Binding ScatteredModel}" 
+                    AbsoluteLayout.LayoutBounds="10,10,.9,.9"
+                    AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" />
+                <Label Text="This is the Results Page!"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="MaxHeight"
+                   VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand"></Label>
-        </StackLayout>
+            </RelativeLayout>
+        <!--</StackLayout>-->
+
     </ContentPage.Content>
         <!--<ListView x:Name="listView"
               Margin="20">
