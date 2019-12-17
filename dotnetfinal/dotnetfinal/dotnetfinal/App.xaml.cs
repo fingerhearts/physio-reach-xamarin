@@ -25,7 +25,9 @@ namespace dotnetfinal
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new DatabasePage());
+
+            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

@@ -17,5 +17,17 @@ namespace dotnetfinal
         {
             InitializeComponent();
         }
+
+        async void ButtonClicked(object sender, EventArgs e)
+        {
+            //Button button = sender as Button;
+            await Navigation.PushAsync(new Page1());
+        }
+
+        async void CountDown()
+        {
+
+        }
+
     }
 }
