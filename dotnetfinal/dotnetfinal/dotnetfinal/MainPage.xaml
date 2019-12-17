@@ -8,29 +8,14 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label Text="Main Page!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-
         <Button 
-            Text="Exercise 1"
+            Text="Go to Exercises"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="CenterAndExpand"
-            Clicked="ButtonClicked"/>
-
-        <!--<Button 
-            Text="Exercie 2"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="CenterAndExpand"
-            Clicked="ButtonClicked"/>
-
-        <Button 
-            Text="Excercise 3"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="CenterAndExpand"
-            Clicked="ButtonClicked"/>-->
-
-
+            Clicked="ButtonClickedPages"/>
     </StackLayout>
 
 </ContentPage>
