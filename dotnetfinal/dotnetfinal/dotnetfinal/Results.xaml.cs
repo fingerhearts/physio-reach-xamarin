@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dotnetfinal.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,9 +22,34 @@ namespace dotnetfinal
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            string test = Coordinates[0].XValue.ToString();
+            Coordinate max = Coordinates[0];
+            Coordinate min = Coordinates[0];
 
-            TestDisplay.Text = test;
+            foreach (Coordinate coord in Coordinates)
+            {
+                if (coord.YValue > max.YValue)
+                {
+                    max = coord;
+                }
+                if (coord.YValue < min.YValue)
+                {
+                    min = coord;
+                }
+            }
+
+            double totalHeight = max.YValue - min.YValue;
+
+            MaxHeight.Text = "Your Maximum height was: " + totalHeight.ToString() + " inches";
+
+            UserActivity activity = new UserActivity()
+            {
+                IsCompleted = true,
+                Date = DateTime.Now,
+                MaxYMotion = (decimal)totalHeight,
+                ActivityID = 1
+            };
+
+            App.Database.SaveUserActivityAsync(activity);
         }
     }
 }

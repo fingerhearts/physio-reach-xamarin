@@ -43,9 +43,9 @@ namespace dotnetfinal.Exercises
         {
             Coordinate coordinate = new Coordinate();
             
-            coordinate.XValue = Math.Round(Convert.ToDouble(e.Reading.Acceleration.X) * 100, 2);
-            coordinate.YValue = Math.Round(Convert.ToDouble(e.Reading.Acceleration.Y) * 100, 2);
-            coordinate.ZValue = Math.Round(Convert.ToDouble(e.Reading.Acceleration.Z) * 100, 2);
+            coordinate.XValue = Math.Round(Convert.ToDouble(e.Reading.Acceleration.X) * 100 / 2.54, 2);
+            coordinate.YValue = Math.Round(Convert.ToDouble(e.Reading.Acceleration.Y) * 100 / 2.54, 2);
+            coordinate.ZValue = Math.Round(Convert.ToDouble(e.Reading.Acceleration.Z) * 100 / 2.54, 2);
 
             Coordinates.Add(coordinate);
         }

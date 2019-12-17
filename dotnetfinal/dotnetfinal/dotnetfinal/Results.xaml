@@ -10,7 +10,9 @@
             <Label Text="This is the Results Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Label x:Name="TestDisplay"></Label>
+            <Label x:Name="MaxHeight"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"></Label>
         </StackLayout>
     </ContentPage.Content>
         <!--<ListView x:Name="listView"
