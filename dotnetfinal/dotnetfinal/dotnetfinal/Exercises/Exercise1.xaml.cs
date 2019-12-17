@@ -5,6 +5,7 @@ using System.Text;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using dotnetfinal.Models;
 
 namespace dotnetfinal.Exercises
 {
@@ -19,14 +20,23 @@ namespace dotnetfinal.Exercises
         }
         void StartButton(object sender, EventArgs e)
         {
+            if (Accelerometer.IsMonitoring)
+            {
+                return;
+            }
+            LabelX.Text = "Running";
             Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
             Accelerometer.Start(SensorSpeed.UI);
         }
         void StopButton(object sender, EventArgs e)
         {
+            if (!Accelerometer.IsMonitoring)
+            {
+                return;
+            }
             Accelerometer.ReadingChanged -= Accelerometer_ReadingChanged;
             Accelerometer.Stop();
-            
+            LabelX.Text = "Stopped";
         }
 
         private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
@@ -39,6 +49,10 @@ namespace dotnetfinal.Exercises
 
             Coordinates.Add(coordinate);
         }
-
+        async void ResultsClicked(object sender, EventArgs e)
+        {
+            //Button button = sender as Button;
+            await Navigation.PushAsync(new Results(Coordinates));
+        }
     }
 }

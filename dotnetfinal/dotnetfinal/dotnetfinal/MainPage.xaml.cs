@@ -21,7 +21,7 @@ namespace dotnetfinal
         async void ButtonClicked(object sender, EventArgs e)
         {
             //Button button = sender as Button;
-            await Navigation.PushAsync(new Page1());
+            await Navigation.PushAsync(new Exercises.Exercise1());
         }
 
         async void CountDown()

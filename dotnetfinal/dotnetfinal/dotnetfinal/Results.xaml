@@ -10,6 +10,15 @@
             <Label Text="This is the Results Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="TestDisplay"></Label>
         </StackLayout>
     </ContentPage.Content>
+        <!--<ListView x:Name="listView"
+              Margin="20">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Test}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
 </ContentPage>

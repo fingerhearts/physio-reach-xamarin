@@ -12,9 +12,18 @@ namespace dotnetfinal
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Results : ContentPage
     {
-        public Results()
+        public List<Coordinate> Coordinates { get; set; }
+        public Results(List<Coordinate> coordinates)
         {
+            Coordinates = coordinates;
             InitializeComponent();
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            string test = Coordinates[0].XValue.ToString();
+
+            TestDisplay.Text = test;
         }
     }
 }
