@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              mc:Ignorable="d"
              x:Class="dotnetfinal.Results">
     <ContentPage.Content>
@@ -13,7 +14,14 @@
             <Label x:Name="MaxHeight"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand"></Label>
+            <AbsoluteLayout>
+                <oxy:PlotView
+                    Model="{Binding ScatteredModel}" 
+                    AbsoluteLayout.LayoutBounds="10,30,.9,.9"
+                    AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" />
+            </AbsoluteLayout>
         </StackLayout>
+
     </ContentPage.Content>
         <!--<ListView x:Name="listView"
               Margin="20">

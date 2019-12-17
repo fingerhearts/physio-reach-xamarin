@@ -51,8 +51,9 @@ namespace dotnetfinal.Exercises
         }
         async void ResultsClicked(object sender, EventArgs e)
         {
+            var vData = new OxyData(Coordinates);
             //Button button = sender as Button;
-            await Navigation.PushAsync(new Results(Coordinates));
+            await Navigation.PushAsync(new Results(Coordinates) { Title = "Results", BindingContext = vData });
         }
     }
 }

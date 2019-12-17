@@ -9,6 +9,7 @@
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
+    <PackageReference Include="OxyPlot.Xamarin.Forms" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -27,5 +28,8 @@
     <EmbeddedResource Update="Results.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="OxyTestPage.xaml.cs" />
   </ItemGroup>
 </Project>
