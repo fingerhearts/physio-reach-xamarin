@@ -28,11 +28,6 @@ namespace dotnetfinal
 
             MainPage = new MainPage();
             MainPage = new NavigationPage(new MainPage());
-
-            //var vSampleData = new OxyData();
-            //var vTabMain = new TabbedPage();
-            //vTabMain.Children.Add(new OxyScatteredPlotPage { Title = "Pie", BindingContext = vSampleData });
-            //MainPage = vTabMain;
         }
 
         protected override void OnStart()
