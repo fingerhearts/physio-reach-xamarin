@@ -11,6 +11,26 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+
+        <Button 
+            Text="Exercise 1"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            Clicked="ButtonClicked"/>
+
+        <!--<Button 
+            Text="Exercie 2"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            Clicked="ButtonClicked"/>
+
+        <Button 
+            Text="Excercise 3"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            Clicked="ButtonClicked"/>-->
+
+
     </StackLayout>
 
 </ContentPage>
