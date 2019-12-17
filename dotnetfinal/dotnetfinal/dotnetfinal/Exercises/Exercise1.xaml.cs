@@ -25,6 +25,8 @@ namespace dotnetfinal.Exercises
             int _SecondsElapsed = 8;
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
+                start.Text = "Running";
+                LabelX.Text = "";
                 while (_SecondsElapsed >= 0)
                 {
                     switch (_SecondsElapsed)
@@ -45,6 +47,11 @@ namespace dotnetfinal.Exercises
                     _SecondsElapsed--;
                     return true;
                 }
+                Accelerometer.ReadingChanged -= Accelerometer_ReadingChanged;
+                Accelerometer.Stop();
+                LabelX.Text = "Stopped";
+                start.Text = "Start";
+                countdownTimer.Text = "";
                 return false;
             });
         }
@@ -53,19 +60,8 @@ namespace dotnetfinal.Exercises
         void StartButton(object sender, EventArgs e)
         {
             Countdown(true);
-            //Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
-            //Accelerometer.Start(SensorSpeed.UI);
-        }
-
-        void StopButton(object sender, EventArgs e)
-        {
-            if (!Accelerometer.IsMonitoring)
-            {
-                return;
-            }
-            Accelerometer.ReadingChanged -= Accelerometer_ReadingChanged;
-            Accelerometer.Stop();
-            LabelX.Text = "Stopped";
+            Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
+            Accelerometer.Start(SensorSpeed.UI);
         }
 
         private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
@@ -78,6 +74,7 @@ namespace dotnetfinal.Exercises
 
             Coordinates.Add(coordinate);
         }
+
         async void ResultsClicked(object sender, EventArgs e)
         {
             var vData = new OxyData(Coordinates);
