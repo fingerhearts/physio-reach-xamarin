@@ -18,16 +18,16 @@ namespace dotnetfinal
             InitializeComponent();
         }
 
-        async void ButtonClicked(object sender, EventArgs e)
+        async void ButtonClickedPages(object sender, EventArgs e)
         {
             //Button button = sender as Button;
-            await Navigation.PushAsync(new Exercises.Exercise1());
+            await Navigation.PushAsync(new Exercises.ExercisesPage());
         }
 
-        async void CountDown()
-        {
+        //async void CountDown()
+        //{
 
-        }
+        //}
 
     }
 }
