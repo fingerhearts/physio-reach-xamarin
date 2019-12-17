@@ -22,7 +22,12 @@
             <Label x:Name="LabelLength"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-            <Button HorizontalOptions="Center"
+            <Label x:Name="countdownTimer"           
+                FormattedText=""
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+            <Button ClassId="start"
+                HorizontalOptions="Center"
                 Text="Start" 
                 VerticalOptions="Center" 
                 Clicked="StartButton"></Button>
