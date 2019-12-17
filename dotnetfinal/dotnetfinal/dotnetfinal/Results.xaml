@@ -7,20 +7,20 @@
              mc:Ignorable="d"
              x:Class="dotnetfinal.Results">
     <ContentPage.Content>
-        <StackLayout>
+        <!--<StackLayout>
             <Label Text="This is the Results Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Label x:Name="MaxHeight"
                    VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand"></Label>
+                   HorizontalOptions="CenterAndExpand"></Label>-->
             <AbsoluteLayout>
                 <oxy:PlotView
                     Model="{Binding ScatteredModel}" 
-                    AbsoluteLayout.LayoutBounds="10,30,.9,.9"
+                    AbsoluteLayout.LayoutBounds="10,10,.9,.9"
                     AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" />
             </AbsoluteLayout>
-        </StackLayout>
+        <!--</StackLayout>-->
 
     </ContentPage.Content>
         <!--<ListView x:Name="listView"
