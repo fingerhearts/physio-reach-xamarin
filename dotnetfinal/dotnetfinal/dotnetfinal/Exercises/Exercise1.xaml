@@ -26,7 +26,7 @@
                 FormattedText=""
                 HorizontalOptions="Center"
                 VerticalOptions="Center"/>
-            <Button ClassId="start"
+            <Button x:Name="start"
                 HorizontalOptions="Center"
                 Text="Start" 
                 VerticalOptions="Center" 
