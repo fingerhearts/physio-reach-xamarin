@@ -1,5 +1,4 @@
-﻿using dotnetfinal.Exercises;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -22,7 +21,7 @@ namespace dotnetfinal
         async void ButtonClicked(object sender, EventArgs e)
         {
             //Button button = sender as Button;
-            await Navigation.PushAsync(new Exercise1());
+            await Navigation.PushAsync(new Exercises.Exercise1());
         }
 
         async void CountDown()
