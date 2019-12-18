@@ -39,7 +39,7 @@ namespace dotnetfinal
 
             double totalHeight = max.YValue - min.YValue;
 
-            //MaxHeight.Text = "Your Maximum height was: " + totalHeight.ToString() + " physios";
+            MaxHeight.Text = "Your Maximum height was: " + totalHeight.ToString() + " physios";
 
             UserActivity activity = new UserActivity()
             {
