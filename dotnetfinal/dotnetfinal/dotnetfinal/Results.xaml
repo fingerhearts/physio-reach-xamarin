@@ -7,34 +7,21 @@
              mc:Ignorable="d"
              x:Class="dotnetfinal.Results">
     <ContentPage.Content>
-        <!--<StackLayout>
-            <Label Text="This is the Results Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Label x:Name="MaxHeight"
-                   VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand"></Label>-->
-            <RelativeLayout>
-                <oxy:PlotView
-                    Model="{Binding ScatteredModel}" 
-                    AbsoluteLayout.LayoutBounds="10,10,.9,.9"
-                    AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" />
-                <Label Text="This is the Results Page!"
-                    VerticalOptions="CenterAndExpand" 
-                    HorizontalOptions="CenterAndExpand" />
-                <Label x:Name="MaxHeight"
-                   VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand"></Label>
-            </RelativeLayout>
-        <!--</StackLayout>-->
-
+        <Grid x:Name="LayoutRoot">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <oxy:PlotView
+                Model="{Binding ScatteredModel}"
+                Grid.Row="0" />
+            <Label
+                Text="This is the Results Page!"
+                Grid.Row="1"/>
+            <Label
+                x:Name="MaxHeight"
+                Grid.Row="2"></Label>
+        </Grid>
     </ContentPage.Content>
-        <!--<ListView x:Name="listView"
-              Margin="20">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Test}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>-->
 </ContentPage>
