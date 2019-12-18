@@ -19,33 +19,33 @@ namespace dotnetfinal.Exercises
     {
         public List<Coordinate> Coordinates { get; set; } = new List<Coordinate>();
 
-        ISimpleAudioPlayer player;
-
         public Exercise1()
         {
             InitializeComponent();
-            var stream = GetStreamFromFile("Envision.mp3");
-            player = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
-            player.Load(stream);
+
+            var audio = CrossSimpleAudioPlayer.Current;
+            audio.Load(GetStreamFromFile("Envision.mp3")); 
         }
 
         Stream GetStreamFromFile(string filename)
         {
             var assembly = typeof(App).GetTypeInfo().Assembly;
-
-            var stream = assembly.GetManifestResourceStream("SAPlayerSample." + filename);
-
+            var stream = assembly.GetManifestResourceStream("dotnetfinal." + filename);
             return stream;
         }
 
         public void Countdown()
         {
+            var stream = GetStreamFromFile("Envision.mp3");
+            var audio = CrossSimpleAudioPlayer.Current;
+            audio.Load(stream);
+
             int _SecondsElapsed = 8;
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
                 start.Text = "Running";
                 LabelX.Text = "";
-                player.Play();
+                audio.Play();
                 while (_SecondsElapsed >= 0)
                 {
                     switch (_SecondsElapsed)
@@ -71,7 +71,7 @@ namespace dotnetfinal.Exercises
                 LabelX.Text = "Stopped";
                 start.Text = "Start";
                 countdownTimer.Text = "";
-                player.Stop();
+                audio.Stop();
                 return false;
             });
         }
@@ -100,6 +100,5 @@ namespace dotnetfinal.Exercises
             //Button button = sender as Button;
             await Navigation.PushAsync(new Results(Coordinates) { Title = "Results", BindingContext = vData });
         }
-
     }
 }

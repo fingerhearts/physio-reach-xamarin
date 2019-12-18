@@ -39,4 +39,10 @@
   <ItemGroup>
     <Compile Remove="OxyTestPage.xaml.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Envision.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Envision.mp3" />
+  </ItemGroup>
 </Project>
