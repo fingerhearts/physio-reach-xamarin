@@ -28,6 +28,11 @@ namespace dotnetfinal
 
         async void ButtonClicked(object sender, EventArgs e)
         {
+            await Navigation.PushAsync(new Exercises.Exercise1());
+        }
+
+        async void GoogleLogin(object sender, EventArgs e)
+        {
             var authenticator = new OAuth2Authenticator(
                 Secrets.GoogleAuthKey,
                 null,

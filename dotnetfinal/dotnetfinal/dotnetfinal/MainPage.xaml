@@ -17,6 +17,11 @@
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="CenterAndExpand"
             Clicked="ButtonClickedPages"/>
+        <Button 
+            Text="Login With Google"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            Clicked="GoogleLogin"/>
     </StackLayout>
 
 </ContentPage>
