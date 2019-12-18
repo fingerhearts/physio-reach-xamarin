@@ -23,11 +23,17 @@
         <Label Text="Main Page!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+
         <Button 
             Text="Go to Exercises"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="CenterAndExpand"
-            Clicked="ButtonClickedPages"/>
+            Clicked="ButtonClicked"/>
+        <Button 
+            Text="Login With Google"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            Clicked="GoogleLogin"/>
     </StackLayout>
 
 </ContentPage>

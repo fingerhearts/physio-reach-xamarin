@@ -5,11 +5,46 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="dotnetfinal.Exercises.Exercise2">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Exercise 2 (Under Construction)!"
-                VerticalOptions="CenterAndExpand" 
+
+
+<ContentPage.Content>
+    <StackLayout>
+        <Label Text="Shoulder Flexion"
+                VerticalOptions="Start"
+                   Margin="20"
+                   FontSize="Title"
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+        <Image Source="flexion.jpg"
+                   />
+
+
+        <Label x:Name="LabelX"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+        <Label x:Name="LabelY"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+        <Label x:Name="LabelZ"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+        <Label x:Name="LabelLength"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+        <Label x:Name="countdownTimer"           
+                FormattedText=""
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+        <Button x:Name="start"
+                HorizontalOptions="Center"
+                Text="Start" 
+                VerticalOptions="Center" 
+                Clicked="StartButton"></Button>
+        <Button HorizontalOptions="Center"
+                Text="Stop" 
+                VerticalOptions="Center" 
+                Clicked="StopButton"></Button>
+
+
+    </StackLayout>
+</ContentPage.Content>
 </ContentPage>
