@@ -43,10 +43,10 @@ namespace dotnetfinal
             await Navigation.PushAsync(new Exercises.Exercise1());
         }
 
-        async void CountDown()
-        {
+        //async void CountDown()
+        //{
 
-        }
+        //}
 
     }
 }
