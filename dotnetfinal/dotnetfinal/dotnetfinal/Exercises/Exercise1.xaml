@@ -23,6 +23,8 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
             <Label x:Name="countdownTimer"           
+                FontSize='Large'
+                TextColor="Red"
                 FormattedText=""
                 HorizontalOptions="Center"
                 VerticalOptions="Center"/>
@@ -32,12 +34,8 @@
                 VerticalOptions="Center" 
                 Clicked="StartButton"></Button>
             <Button HorizontalOptions="Center"
-                Text="Stop" 
+                Text="Results" 
                 VerticalOptions="Center" 
-                Clicked="StopButton"></Button>
-            <Button HorizontalOptions="Center"
-                Text="Results"
-                VerticalOptions="Center"
                 Clicked="ResultsClicked"></Button>
         </StackLayout>
     </ContentPage.Content>
