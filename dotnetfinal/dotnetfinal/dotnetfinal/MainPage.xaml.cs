@@ -1,9 +1,12 @@
-﻿using System;
+﻿using dotnetfinal.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Auth;
+using Xamarin.Auth.Presenters;
 using Xamarin.Forms;
 
 namespace dotnetfinal
@@ -18,9 +21,25 @@ namespace dotnetfinal
             InitializeComponent();
         }
 
+        private async void Authenticator_Completed(object sender, AuthenticatorCompletedEventArgs e)
+        {
+            await Navigation.PushAsync(new Exercises.Exercise1());
+        }
+
         async void ButtonClicked(object sender, EventArgs e)
         {
-            //Button button = sender as Button;
+            var authenticator = new OAuth2Authenticator(
+                Secrets.GoogleAuthKey,
+                null,
+                Secrets.GoogleScope,
+                new Uri("https://accounts.google.com/o/oauth2/auth"),
+                new Uri(Secrets.GoogleRedirectUrl),
+                new Uri("https://www.googleapis.com/oauth2/v4/token"),
+                null,
+                true);
+            authenticator.Completed += Authenticator_Completed;
+            var presenter = new OAuthLoginPresenter();
+            presenter.Login(authenticator);
             await Navigation.PushAsync(new Exercises.Exercise1());
         }
 
