@@ -432,4 +432,7 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
+# Secrets for mobile
+secrets.json
+
 # End of https://www.gitignore.io/api/linux,macos,windows,visualstudio,visualstudiocode
