@@ -16,7 +16,7 @@
             Text="Go to Exercises"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="CenterAndExpand"
-            Clicked="ButtonClickedPages"/>
+            Clicked="ButtonClicked"/>
         <Button 
             Text="Login With Google"
             VerticalOptions="CenterAndExpand"
