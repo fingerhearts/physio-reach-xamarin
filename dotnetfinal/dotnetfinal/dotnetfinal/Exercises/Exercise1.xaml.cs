@@ -1,8 +1,7 @@
-﻿using Android.Media;
-using Android.OS;
-using Plugin.SimpleAudioPlayer;
+﻿using Plugin.SimpleAudioPlayer;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -25,6 +24,18 @@ namespace dotnetfinal.Exercises
         public Exercise1()
         {
             InitializeComponent();
+            var stream = GetStreamFromFile("Envision.mp3");
+            player = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+            player.Load(stream);
+        }
+
+        Stream GetStreamFromFile(string filename)
+        {
+            var assembly = typeof(App).GetTypeInfo().Assembly;
+
+            var stream = assembly.GetManifestResourceStream("SAPlayerSample." + filename);
+
+            return stream;
         }
 
         public void Countdown()
@@ -34,7 +45,8 @@ namespace dotnetfinal.Exercises
             {
                 start.Text = "Running";
                 LabelX.Text = "";
-            while (_SecondsElapsed >= 0)
+                player.Play();
+                while (_SecondsElapsed >= 0)
                 {
                     switch (_SecondsElapsed)
                     {
@@ -59,7 +71,8 @@ namespace dotnetfinal.Exercises
                 LabelX.Text = "Stopped";
                 start.Text = "Start";
                 countdownTimer.Text = "";
-            return false;
+                player.Stop();
+                return false;
             });
         }
 
