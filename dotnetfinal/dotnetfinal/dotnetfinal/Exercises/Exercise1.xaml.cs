@@ -1,6 +1,4 @@
-﻿using Android.Media;
-using Android.OS;
-using Plugin.SimpleAudioPlayer;
+﻿using Plugin.SimpleAudioPlayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
