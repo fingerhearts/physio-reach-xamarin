@@ -5,11 +5,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="dotnetfinal.Exercises.Exercise1">
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Exercise 1!"
-                VerticalOptions="CenterAndExpand" 
+            <Label Text="Shoulder Abduction"
+                VerticalOptions="Start"
+                   Margin="20"
+                   FontSize="Title"
                 HorizontalOptions="CenterAndExpand" />
+            <Image Source="shoulder.jpg"
+                   />
+
+
             <Label x:Name="LabelX"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
@@ -40,3 +47,6 @@
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+    
+    
+    
