@@ -31,9 +31,11 @@
     <StackLayout
         BackgroundColor="{StaticResource BackgroundColor}">
         <!-- Place new controls here -->
-        <Label Text="Main Page!" 
+        <Label Text="Welcome to Physio Reach" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="CenterAndExpand"
+           FontSize="Medium"
+           TextColor = "White" />
 
         <Button
             Style="{StaticResource ButtonStyle}"

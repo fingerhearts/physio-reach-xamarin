@@ -5,8 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              mc:Ignorable="d"
-             x:Class="dotnetfinal.Results"
-             Title="Results">
+             x:Class="dotnetfinal.ResultsDescription"
+             Title="Results Description">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Button">
@@ -23,20 +23,24 @@
         <Grid x:Name="LayoutRoot">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
-                <RowDefinition Height="30" />
+                <RowDefinition Height="35" />
+                <RowDefinition Height="*" />
                 <RowDefinition Height="60" />
             </Grid.RowDefinitions>
-            <oxy:PlotView
-                Model="{Binding ScatteredModel}"
-                Grid.Row="0" />
+            <Image Source="shoulderImg.png"
+            Grid.Row="0"/>
             <Label
                 x:Name="MaxHeight"
                 Grid.Row="1"
                 Margin="10,0,0,0"></Label>
-            <Button
-                Text="Result Details"
+            <Label
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis venenatis lorem nec sodales. Quisque quis urna ac nulla fringilla tristique ut ac tellus. Aenean ac odio enim. Mauris commodo, massa ut auctor viverra, magna urna mattis odio, vitae sollicitudin dolor tellus eget augue. Nullam ipsum elit, bibendum id leo eu, fermentum laoreet dui. Nulla vestibulum ante sit amet turpis maximus tristique. In sollicitudin dolor nibh, quis eleifend dui finibus id. Aliquam ut suscipit libero. Praesent tellus massa, tincidunt ac augue vitae, suscipit venenatis libero."
                 Grid.Row="2"
-                Clicked="ButtonDescription"/>
+                Margin="10,0,10,0"></Label>
+            <Button
+                Text="Home"
+                Grid.Row="3"
+                Clicked="Button_Home"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
