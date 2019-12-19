@@ -85,6 +85,9 @@ namespace dotnetfinal.Exercises
                 start.Text = "Start";
                 countdownTimer.Text = "";
                 audio.Stop();
+                var vData = new OxyData(Coordinates);
+                //Button button = sender as Button;
+                Navigation.PushAsync(new Results(Coordinates) { Title = "Results", BindingContext = vData });
                 return false;
             });
         }
@@ -98,13 +101,6 @@ namespace dotnetfinal.Exercises
             coordinate.ZValue = Math.Round(Convert.ToDouble(e.Reading.Acceleration.Z) * 100 / 2.54, 2);
 
             Coordinates.Add(coordinate);
-        }
-
-        async void ResultsClicked(object sender, EventArgs e)
-        {
-            var vData = new OxyData(Coordinates);
-            //Button button = sender as Button;
-            await Navigation.PushAsync(new Results(Coordinates) { Title = "Results", BindingContext = vData });
         }
     }
 }
