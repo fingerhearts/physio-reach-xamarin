@@ -41,10 +41,6 @@
                 Text="Start" 
                 VerticalOptions="Center" 
                 Clicked="Countdown"></Button>
-            <Button HorizontalOptions="Center"
-                Text="Results" 
-                VerticalOptions="Center" 
-                Clicked="ResultsClicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
