@@ -39,7 +39,7 @@
                 HorizontalOptions="Center"
                 Text="Start" 
                 VerticalOptions="Center" 
-                Clicked="StartButton"></Button>
+                Clicked="Countdown"></Button>
         <Button HorizontalOptions="Center"
                 Text="Stop" 
                 VerticalOptions="Center" 
