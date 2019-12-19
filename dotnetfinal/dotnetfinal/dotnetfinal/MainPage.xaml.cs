@@ -28,7 +28,7 @@ namespace dotnetfinal
 
         async void ButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Exercises.Exercise1());
+            await Navigation.PushAsync(new Exercises.ExercisesPage());
         }
 
         async void GoogleLogin(object sender, EventArgs e)
