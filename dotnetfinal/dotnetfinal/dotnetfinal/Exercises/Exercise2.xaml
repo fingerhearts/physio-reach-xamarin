@@ -4,12 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="dotnetfinal.Exercises.Exercise2">
+             x:Class="dotnetfinal.Exercises.Exercise2"
+             Title="Shoulder Flexion">
 
 
 <ContentPage.Content>
     <StackLayout>
-        <Label Text="Shoulder Flexion"
+        <Label
                 VerticalOptions="Start"
                    Margin="20"
                    FontSize="Title"

@@ -51,5 +51,10 @@ namespace dotnetfinal
 
             App.Database.SaveUserActivityAsync(activity);
         }
+
+        public async void Button_Home(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }

@@ -5,23 +5,46 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              mc:Ignorable="d"
-             x:Class="dotnetfinal.Results">
+             x:Class="dotnetfinal.Results"
+             Title="Results">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="LightGreen"/>
+                <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Padding" Value="1"/>
+                <Setter Property="HeightRequest" Value="100"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid x:Name="LayoutRoot">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="35" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="60" />
             </Grid.RowDefinitions>
             <oxy:PlotView
                 Model="{Binding ScatteredModel}"
                 Grid.Row="0" />
-            <Label
-                Text="This is the Results Page!"
-                Grid.Row="1"/>
+            <Image Source="shoulderImg.png"
+            Grid.Row="1"/>
             <Label
                 x:Name="MaxHeight"
-                Grid.Row="2"></Label>
+                Grid.Row="2"
+                Margin="10,0,0,0"></Label>
+            <Label
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis venenatis lorem nec sodales. Quisque quis urna ac nulla fringilla tristique ut ac tellus. Aenean ac odio enim. Mauris commodo, massa ut auctor viverra, magna urna mattis odio, vitae sollicitudin dolor tellus eget augue. Nullam ipsum elit, bibendum id leo eu, fermentum laoreet dui. Nulla vestibulum ante sit amet turpis maximus tristique. In sollicitudin dolor nibh, quis eleifend dui finibus id. Aliquam ut suscipit libero. Praesent tellus massa, tincidunt ac augue vitae, suscipit venenatis libero."
+                Grid.Row="3"
+                Margin="10,0,10,0"></Label>
+            <Button
+                Text="Home"
+                Grid.Row="4"
+                Clicked="Button_Home"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
