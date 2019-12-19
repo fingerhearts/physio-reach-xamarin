@@ -64,33 +64,37 @@
             <Grid>
                 <Button
                     Style="{StaticResource ButtonStyle}"
-                    Text="Exercise 1"
+                    Text="Shoulder Flexion"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"
+                    WidthRequest="300"
                     Clicked="ButtonClicked1"/>
             </Grid>
             <Grid>
                 <Button
                     Style="{StaticResource ButtonStyle}"
-                    Text="Exercise 2"
+                    Text="Shoulder Abduction"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"
+                    WidthRequest="300"
                     Clicked="ButtonClicked1"/>
             </Grid>
             <Grid>
                 <Button
                     Style="{StaticResource ButtonStyle}"
-                    Text="Exercise 4"
+                    Text="External Rotation"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"
+                    WidthRequest="300"
                     Clicked="ButtonClicked1"/>
             </Grid>
             <Grid>
                 <Button
                     Style="{StaticResource ButtonStyle}"
-                    Text="Exercise 5"
+                    Text="Clamshell"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"
+                    WidthRequest="300"
                     Clicked="ButtonClicked1"/>
             </Grid>
         </StackLayout>
