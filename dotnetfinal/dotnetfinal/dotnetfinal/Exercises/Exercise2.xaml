@@ -43,7 +43,7 @@
         <Button HorizontalOptions="Center"
                 Text="Stop" 
                 VerticalOptions="Center" 
-                Clicked="StopButton"></Button>
+                Clicked="ResultsClicked"></Button>
 
 
     </StackLayout>
