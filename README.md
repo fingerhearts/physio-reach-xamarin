@@ -1,6 +1,6 @@
-# Code Fellows ASP.NET Xamarin Mobile App Project - PROJECT NAME
+# Code Fellows ASP.NET Xamarin Mobile App Project - PHYSIOREACH
 
-## PROJECT NAME
+## PhysioReach
 *Authors: Biniam Tesfamariam, Chris Cummings, Enrique A Rivera De Leon, Karina Chen, and Kyungrae Kim*
 
 ---
@@ -11,18 +11,22 @@
 ---
 
 ### About This Program
-This is a mobile app built with Xamarin.Forms that can run on both Android and iOS systems. This is a mobile game app that tracks the accelerometer and gyroscope of the mobile device. Users can do jumping jacks with their mobile devices in hand and the app gives the users scores based on how well the users do jumping jacks.
+PhysioReach is a mobile application made in Xamarin.Forms that is created to be a physical therapy assistant, helping the user
+through common physical therapy exercises.  The app uses the phone's accelerometer to track movement during each
+exercise, and creates a graph based on data collected during the exercise.
 
 ---
 
-### Features
-* Products
+### Technology Used
+* Xamarin Forms
+* OxyPlot .Net Framework
+* Xamarin.Essentials Accelerometer
+* Simple Audio Player Plugin
+* Android
+* Google Play Store
+* SQLite
+* Mobile.BuildTools
 
-
-* Claims
-
-
-* Policies
 
 
 ---
