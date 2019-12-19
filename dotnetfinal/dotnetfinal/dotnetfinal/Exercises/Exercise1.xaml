@@ -4,11 +4,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="dotnetfinal.Exercises.Exercise1">
+             x:Class="dotnetfinal.Exercises.Exercise1"
+             Title="Shoulder Abduction">
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Shoulder Abduction"
+            <Label 
                 VerticalOptions="Start"
                    Margin="20"
                    FontSize="Title"

@@ -4,11 +4,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="dotnetfinal.Exercises.Exercise3">
+             x:Class="dotnetfinal.Exercises.Exercise3"
+             Title="External Rotation">
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="External Rotation"
+            <Label 
                 VerticalOptions="Start"
                    Margin="20"
                    FontSize="Title"
