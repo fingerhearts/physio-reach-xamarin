@@ -2,12 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -23,10 +18,17 @@ namespace dotnetfinal.Exercises
         {
             InitializeComponent();
 
+            // Utilize SimpleAudioPlayer Plugin intergface to bring in method CreateSimpleAudioPlayer()
+            // Then the SimpleAudioPlayer uses Load method to bring in the audio file
             var audio = CrossSimpleAudioPlayer.Current;
-            audio.Load(GetStreamFromFile("Envision.mp3")); 
+            audio.Load(GetStreamFromFile("Envision.mp3"));
         }
 
+        /// <summary>
+        /// The method loads the specified manifest resource from this assembly then finds the audio file from the folder
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <returns></returns>
         Stream GetStreamFromFile(string filename)
         {
             var assembly = typeof(App).GetTypeInfo().Assembly;
@@ -34,6 +36,15 @@ namespace dotnetfinal.Exercises
             return stream;
         }
 
+        /// <summary>
+        /// Once the start button is clicked, bring in the audio object and start the timer
+        /// Change the start button text to Running when the timer is running
+        /// Count down 8 seconds including prep time
+        /// While counting down to 5th second, start the accelerometer
+        /// Once counts down to 0, stop the accelerometer and stop the audio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Countdown(object sender, EventArgs e)
         {
             var stream = GetStreamFromFile("Envision.mp3");

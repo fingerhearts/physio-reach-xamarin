@@ -1,9 +1,8 @@
-﻿using System;
+﻿using Plugin.SimpleAudioPlayer;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+using System.IO;
+using System.Reflection;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -18,13 +17,30 @@ namespace dotnetfinal.Exercises
         public Exercise3()
         {
             InitializeComponent();
+
+            var audio = CrossSimpleAudioPlayer.Current;
+            audio.Load(GetStreamFromFile("Envision.mp3"));
         }
 
-        public void Countdown(bool running)
+        Stream GetStreamFromFile(string filename)
         {
+            var assembly = typeof(App).GetTypeInfo().Assembly;
+            var stream = assembly.GetManifestResourceStream("dotnetfinal." + filename);
+            return stream;
+        }
+
+        public void Countdown(object sender, EventArgs e)
+        {
+            var stream = GetStreamFromFile("Envision.mp3");
+            var audio = CrossSimpleAudioPlayer.Current;
+            audio.Load(stream);
+
             int _SecondsElapsed = 8;
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
+                start.Text = "Running";
+                LabelX.Text = "";
+                audio.Play();
                 while (_SecondsElapsed >= 0)
                 {
                     switch (_SecondsElapsed)
@@ -37,6 +53,8 @@ namespace dotnetfinal.Exercises
                             break;
                         case 6:
                             countdownTimer.Text = "Go!";
+                            Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
+                            Accelerometer.Start(SensorSpeed.UI);
                             break;
                         default:
                             countdownTimer.Text = _SecondsElapsed.ToString();
@@ -45,27 +63,14 @@ namespace dotnetfinal.Exercises
                     _SecondsElapsed--;
                     return true;
                 }
+                Accelerometer.ReadingChanged -= Accelerometer_ReadingChanged;
+                Accelerometer.Stop();
+                LabelX.Text = "Stopped";
+                start.Text = "Start";
+                countdownTimer.Text = "";
+                audio.Stop();
                 return false;
             });
-        }
-
-
-        void StartButton(object sender, EventArgs e)
-        {
-            Countdown(true);
-            //Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
-            //Accelerometer.Start(SensorSpeed.UI);
-        }
-
-        void StopButton(object sender, EventArgs e)
-        {
-            if (!Accelerometer.IsMonitoring)
-            {
-                return;
-            }
-            Accelerometer.ReadingChanged -= Accelerometer_ReadingChanged;
-            Accelerometer.Stop();
-            LabelX.Text = "Stopped";
         }
 
         private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
@@ -78,6 +83,7 @@ namespace dotnetfinal.Exercises
 
             Coordinates.Add(coordinate);
         }
+
         async void ResultsClicked(object sender, EventArgs e)
         {
             var vData = new OxyData(Coordinates);
