@@ -47,11 +47,5 @@ namespace dotnetfinal
             presenter.Login(authenticator);
             await Navigation.PushAsync(new Exercises.Exercise1());
         }
-
-        //async void CountDown()
-        //{
-
-        //}
-
     }
 }
