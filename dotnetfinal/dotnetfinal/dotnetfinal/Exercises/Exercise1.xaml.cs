@@ -34,7 +34,7 @@ namespace dotnetfinal.Exercises
             return stream;
         }
 
-        public void Countdown()
+        public void Countdown(object sender, EventArgs e)
         {
             var stream = GetStreamFromFile("Envision.mp3");
             var audio = CrossSimpleAudioPlayer.Current;
@@ -58,6 +58,8 @@ namespace dotnetfinal.Exercises
                             break;
                         case 6:
                             countdownTimer.Text = "Go!";
+                            Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
+                            Accelerometer.Start(SensorSpeed.UI);
                             break;
                         default:
                             countdownTimer.Text = _SecondsElapsed.ToString();
@@ -74,13 +76,6 @@ namespace dotnetfinal.Exercises
                 audio.Stop();
                 return false;
             });
-        }
-
-        void StartButton(object sender, EventArgs e)
-        {
-            Countdown();
-            Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
-            Accelerometer.Start(SensorSpeed.UI);
         }
 
         private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
