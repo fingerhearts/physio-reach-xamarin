@@ -6,7 +6,7 @@
 ---
 
 ### Deployed Website
-
+N/A
 
 ---
 
@@ -27,8 +27,6 @@ exercise, and creates a graph based on data collected during the exercise.
 * SQLite
 * Mobile.BuildTools
 
-
-
 ---
 
 ### Link to Code
@@ -37,25 +35,38 @@ https://dev.azure.com/dotnetfinal/_git/dotnetfinal
 ---
 
 ### Visuals
-#### Home
+#### Android
+##### Splash
+![splash-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/splash-android.jpg)
+##### Home
+![home-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/home-android.jpg)
+##### Exercises
+![exercises-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/exercises-android.jpg)
+##### Shoulder Abduction (Start)
+![shoulder-start-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-start-android.jpg)
+##### Shoulder Abduction (Running)
+![shoulder-start-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-running-ios.jpg)
+##### Result
+![result-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-android.jpg)
+##### Result Description
+![result-description-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-description-android.jpg)
 
-
-#### Page 1
-
-
-#### Page 2
-
-
-#### Page 3
-
-
-#### Page 4
-
-
-#### Page 5
-
+#### iOS
+##### Home
+![home-ios](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/home-ios.PNG)
+##### Exercises
+![exercises-ios](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/exercises-ios.PNG)
+##### Shoulder Abduction (Start)
+![shoulder-start-ios](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-start-ios.PNG)
+##### Shoulder Abduction (Running)
+![shoulder-start-ios](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-running-ios.PNG)
+##### Result
+![result-ios](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-ios.PNG)
+##### Result Description
+![result-description-ios](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-description-ios.PNG)
 
 ---
 
 ### Change Log
+1.0: *Project Completed, Initial Submission* - 20 Dec 2019  
 0.0: *Project Initiated* - 11 Dec 2019  
