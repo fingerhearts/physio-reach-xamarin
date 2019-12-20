@@ -15,6 +15,13 @@ namespace dotnetfinal.Exercises
         public ExercisesPage()
         {
             InitializeComponent();
+
+            Title = "Exercises";
+
+            NavigationPage.SetHasBackButton(this, true);
+
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromHex("#3BC368");
+            ((NavigationPage)Application.Current.MainPage).BarTextColor = Color.White;
         }
 
         async void ButtonClicked1(object sender, EventArgs e)

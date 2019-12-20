@@ -4,9 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="dotnetfinal.Exercises.ExercisesPage"
-             Title="Exercises"
-             BackgroundColor="#3BC368">
+             x:Class="dotnetfinal.Exercises.ExercisesPage">
     <ContentPage.Resources>
         <ResourceDictionary>
             <!--<Style TargetType="Button">
