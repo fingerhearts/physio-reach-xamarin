@@ -18,6 +18,13 @@ namespace dotnetfinal.Exercises
         {
             InitializeComponent();
 
+            Title = "Shoulder Abduction";
+
+            NavigationPage.SetHasBackButton(this, false);
+
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromHex("#FEFFFF");
+            ((NavigationPage)Application.Current.MainPage).BarTextColor = Color.FromHex("#333333");
+
             // Utilize SimpleAudioPlayer Plugin intergface to bring in method CreateSimpleAudioPlayer()
             // Then the SimpleAudioPlayer uses Load method to bring in the audio file
             var audio = CrossSimpleAudioPlayer.Current;
@@ -47,7 +54,7 @@ namespace dotnetfinal.Exercises
         /// <param name="e"></param>
         public void Countdown(object sender, EventArgs e)
         {
-            var stream = GetStreamFromFile("Envision.mp3");
+            var stream = GetStreamFromFile("countdown.mp3");
             var audio = CrossSimpleAudioPlayer.Current;
             audio.Load(stream);
 
@@ -56,12 +63,12 @@ namespace dotnetfinal.Exercises
             {
                 start.Text = "Running";
                 LabelX.Text = "";
-                audio.Play();
                 while (_SecondsElapsed >= 0)
                 {
                     switch (_SecondsElapsed)
                     {
                         case 8:
+                audio.Play();
                             countdownTimer.Text = "Ready";
                             break;
                         case 7:
@@ -82,7 +89,7 @@ namespace dotnetfinal.Exercises
                 Accelerometer.ReadingChanged -= Accelerometer_ReadingChanged;
                 Accelerometer.Stop();
                 LabelX.Text = "Stopped";
-                start.Text = "Start";
+                //start.Text = "Start";
                 countdownTimer.Text = "";
                 audio.Stop();
                 var vData = new OxyData(Coordinates);

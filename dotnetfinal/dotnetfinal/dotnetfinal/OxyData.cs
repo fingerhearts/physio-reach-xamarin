@@ -17,7 +17,7 @@ namespace dotnetfinal
 
         private PlotModel CreateScatteredChart(List<Coordinate> list)
         {
-            var model = new PlotModel { Title = "ScatterSeries" };
+            var model = new PlotModel { Title = "" };
             var scatterSeries = new ScatterSeries { MarkerType = MarkerType.Circle };
 
             for (int i = 0; i < list.Count - 1; i++)

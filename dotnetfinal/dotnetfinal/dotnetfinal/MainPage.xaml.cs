@@ -19,16 +19,6 @@ namespace dotnetfinal
         public MainPage()
         {
             InitializeComponent();
-
-            //Title = "Exercises";
-
-            //NavigationPage.SetHasBackButton(this, false);
-            //NavigationPage page = Application.Current.MainPage as NavigationPage;
-            //page.BarBackgroundColor = Color.FromHex("#333333");
-            
-
-            //            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromHex("#333333");
-            //((NavigationPage)Application.Current.MainPage).BarTextColor = Color.White;
         }
 
         private async void Authenticator_Completed(object sender, AuthenticatorCompletedEventArgs e)

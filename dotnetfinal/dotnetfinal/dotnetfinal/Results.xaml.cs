@@ -18,6 +18,13 @@ namespace dotnetfinal
         {
             Coordinates = coordinates;
             InitializeComponent();
+
+            Title = "Result";
+
+            NavigationPage.SetHasBackButton(this, false);
+
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromHex("#333333");
+            ((NavigationPage)Application.Current.MainPage).BarTextColor = Color.White;
         }
         protected override void OnAppearing()
         {
