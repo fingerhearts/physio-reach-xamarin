@@ -137,4 +137,13 @@
       <Name>dotnetfinal</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\app_icon.png" />
+    <BundleResource Include="Resources\external.jpg" />
+    <BundleResource Include="Resources\flexion.jpg" />
+    <BundleResource Include="Resources\shoulder.jpg" />
+    <BundleResource Include="Resources\shoulderImg.png" />
+    <BundleResource Include="Resources\splash_logo_sm.png" />
+    <BundleResource Include="Resources\splash_logo.png" />
+  </ItemGroup>
 </Project>
