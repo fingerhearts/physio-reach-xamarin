@@ -7,46 +7,53 @@
              x:Class="dotnetfinal.MainPage">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="BackgroundColor">#333333</Color>
-            <Color x:Key="CellBackgroundColor">#3BC368</Color>
+            <!--<Color x:Key="BackgroundColor">#333333</Color>
+            <Color x:Key="CellBackgroundColor">#3BC368</Color>-->
 
-            <Style x:Key="ButtonStyle" TargetType="Button">
+            <!--<Style x:Key="ButtonStyle" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{StaticResource CellBackgroundColor}" />
-                <!--<Setter Property="TextColor" Value="{StaticResource SubTitleColor}" />-->
+                <Setter Property="TextColor" Value="{StaticResource SubTitleColor}" />
                 <Setter Property="CornerRadius" Value="12" />
                 <Setter Property="Padding" Value="100 , 20, 100, 20" />
                 <Setter Property="Margin" Value="0, 12, 0, 0" />
+            </Style>-->
+
+            <Color x:Key="BackgroundColor">#333333</Color>
+            <Color x:Key="ButtonBackgroundColor">#3BC368</Color>
+            <Color x:Key="PageTextColor">#FFFFFF</Color>
+
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
+                <Setter Property="TextColor" Value="{StaticResource PageTextColor}" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="WidthRequest" Value="300" />
+                <Setter Property="Padding" Value="20" />
+                <Setter Property="Margin" Value="10, 10, 10, 10" />
             </Style>
 
-            <!--<Style TargetType="Button">
-                <Setter Property="BackgroundColor" Value="LightGreen"/>
-                <Setter Property="BorderColor" Value="Black"/>
-                <Setter Property="BorderWidth" Value="1"/>
-                <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="Padding" Value="1"/>
-            </Style>-->
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PageTextColor}" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="Margin" Value="10, 100, 10, 150" />
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <StackLayout
         BackgroundColor="{StaticResource BackgroundColor}">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Physio Reach" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand"
-           FontSize="Medium"
-           TextColor = "White" />
-
+        <Label Text="Welcome to Physio Reach"
+           Style="{StaticResource LabelStyle}"
+           HorizontalOptions="Center"/>
         <Button
             Style="{StaticResource ButtonStyle}"
             Text="Go to Exercises"
-            VerticalOptions="CenterAndExpand"
             HorizontalOptions="CenterAndExpand"
             Clicked="ButtonClicked"/>
         <Button
             Style="{StaticResource ButtonStyle}"
             Text="Login With Google"
-            VerticalOptions="CenterAndExpand"
             HorizontalOptions="CenterAndExpand"
             Clicked="GoogleLogin"/>
     </StackLayout>

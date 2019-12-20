@@ -5,37 +5,65 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              mc:Ignorable="d"
-             x:Class="dotnetfinal.Results"
-             Title="Results">
+             x:Class="dotnetfinal.Results">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Style TargetType="Button">
-                <Setter Property="BackgroundColor" Value="LightGreen"/>
-                <Setter Property="BorderColor" Value="Black"/>
-                <Setter Property="BorderWidth" Value="1"/>
-                <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="Padding" Value="1"/>
-                <Setter Property="HeightRequest" Value="100"/>
+            <Color x:Key="BackgroundColor">#333333</Color>
+            <Color x:Key="ButtonBackgroundColor">#3BC368</Color>
+            <Color x:Key="PageTextColor">#FFFFFF</Color>
+            <Color x:Key="LineBreakColor">#FFFFFF</Color>
+
+            <Style x:Key="LineBreakStyle" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{StaticResource LineBreakColor}" />
+                <Setter Property="Margin" Value="10, 0, 10, 0" />
+            </Style>
+
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
+                <Setter Property="TextColor" Value="{StaticResource PageTextColor}" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="Padding" Value="100 , 20, 100, 20" />
+                <Setter Property="Margin" Value="10, 10, 10, 10" />
+            </Style>
+
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PageTextColor}" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="15" />
+            </Style>
+
+            <Style x:Key="OxyStyle" TargetType="oxy:PlotView">
+                <Setter Property="BackgroundColor" Value="#FFFFFF" />
+                <Setter Property="Margin" Value="10, 20, 10, 20" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid x:Name="LayoutRoot">
+        <Grid x:Name="LayoutRoot"
+            BackgroundColor="{StaticResource BackgroundColor}">
             <Grid.RowDefinitions>
+                <RowDefinition Height="1" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="30" />
-                <RowDefinition Height="60" />
+                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
+            <BoxView
+                HorizontalOptions="FillAndExpand"
+                Style="{StaticResource LineBreakStyle}"
+                Grid.Row="0"/>
             <oxy:PlotView
                 Model="{Binding ScatteredModel}"
-                Grid.Row="0" />
+                Style="{StaticResource OxyStyle}"
+                Grid.Row="1"/>
             <Label
                 x:Name="MaxHeight"
-                Grid.Row="1"
-                Margin="10,0,0,0"></Label>
+                Grid.Row="2"
+                Style="{StaticResource LabelStyle}"
+                HorizontalOptions="CenterAndExpand"></Label>
             <Button
                 Text="Result Details"
-                Grid.Row="2"
+                Grid.Row="3"
+                Style="{StaticResource ButtonStyle}"
                 Clicked="ButtonDescription"/>
         </Grid>
     </ContentPage.Content>

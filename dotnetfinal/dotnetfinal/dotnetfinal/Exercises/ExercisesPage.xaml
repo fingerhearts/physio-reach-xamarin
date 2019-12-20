@@ -4,9 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="dotnetfinal.Exercises.ExercisesPage"
-             Title="Exercises"
-             BackgroundColor="#3BC368">
+             x:Class="dotnetfinal.Exercises.ExercisesPage">
     <ContentPage.Resources>
         <ResourceDictionary>
             <!--<Style TargetType="Button">
@@ -36,7 +34,8 @@
                 <Setter Property="BackgroundColor" Value="{StaticResource CellBackgroundColor}" />
                 <Setter Property="TextColor" Value="{StaticResource SubTitleColor}" />
                 <Setter Property="CornerRadius" Value="5" />
-                <Setter Property="Padding" Value="100 , 20, 100, 20" />
+                <Setter Property="WidthRequest" Value="300" />
+                <Setter Property="Padding" Value="20" />
                 <Setter Property="Margin" Value="0, 12, 0, 0" />
             </Style>
 
@@ -60,7 +59,7 @@
                 HorizontalOptions="FillAndExpand"
                 HeightRequest="1"
                 Color="#FFFFFF"
-                Margin="10, 0, 10, 200"/>
+                Margin="10, 0, 10, 120"/>
             <Grid>
                 <Button
                     Style="{StaticResource ButtonStyle}"

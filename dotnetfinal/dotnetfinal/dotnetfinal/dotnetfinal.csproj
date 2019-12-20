@@ -50,8 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Envision.mp3" />
+    <None Remove="countdown.mp3" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Envision.mp3" />
+    <EmbeddedResource Include="countdown.mp3" />
   </ItemGroup>
 </Project>
