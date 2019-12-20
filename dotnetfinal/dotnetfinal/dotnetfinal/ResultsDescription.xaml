@@ -49,7 +49,7 @@
             <Image Source="shoulderImg.png"
                 Grid.Row="1"/>
             <Label
-                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis venenatis lorem nec sodales. Quisque quis urna ac nulla fringilla tristique ut ac tellus. Aenean ac odio enim. Mauris commodo, massa ut auctor viverra, magna urna mattis odio, vitae sollicitudin dolor tellus eget augue. Nullam ipsum elit, bibendum id leo eu, fermentum laoreet dui. Nulla vestibulum ante sit amet turpis maximus tristique. In sollicitudin dolor nibh, quis eleifend dui finibus id. Aliquam ut suscipit libero. Praesent tellus massa, tincidunt ac augue vitae, suscipit venenatis libero."
+                Text="Regular exercises to restore motion and flexibility to your shoulder and a gradual return to your everyday activities are important for your full recovery, especially after shoulder surgery. The primary muscles involved in the action of shoulder abduction include the supraspinatus, deltoid, trapezius, and serratus anterior. This motion actually can be divided into two motions: true abduction of the arm at the shoulder and upward rotation of the scapula. This exercise may not be recommended after certain surgeries. Check with your surgeon or physical therapist to ensure that it is appropriate for you."
                 Grid.Row="2"
                 VerticalOptions="CenterAndExpand"
                 Style="{StaticResource LabelStyle}"></Label>
