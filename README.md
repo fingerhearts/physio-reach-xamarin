@@ -37,19 +37,19 @@ https://dev.azure.com/dotnetfinal/_git/dotnetfinal
 ### Visuals
 #### Android
 ##### Splash
-<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/splash-android.jpg" alt="splash-android" width="300"/>
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/splash-android.jpg" alt="splash-android" width="300"/>   
 ##### Home
-![home-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/home-android.jpg)
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/home-android.jpg" alt="home-android" width="300"/>  
 ##### Exercises
-![exercises-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/exercises-android.jpg)
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/exercises-android.jpg" alt="exercises-android" width="300"/>  
 ##### Shoulder Abduction (Start)
-![shoulder-start-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-start-android.jpg)
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-start-android.jpg" alt="shoulder-start-android" width="300"/>  
 ##### Shoulder Abduction (Running)
-![shoulder-start-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-running-ios.jpg)
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-start-android.jpg" alt="shoulder-start-android" width="300"/>  
 ##### Result
-![result-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-android.jpg)
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-android" alt="result-android" width="300"/>  
 ##### Result Description
-![result-description-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-description-android.jpg)
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-description-android.jpg" alt="result-description-android" width="300"/>  
 
 #### iOS
 ##### Home
