@@ -37,7 +37,7 @@ https://dev.azure.com/dotnetfinal/_git/dotnetfinal
 ### Visuals
 #### Android
 ##### Splash
-![splash-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/splash-android.jpg)
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/splash-android.jpg" alt="splash-android" width="300"/>
 ##### Home
 ![home-android](https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/home-android.jpg)
 ##### Exercises
