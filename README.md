@@ -37,19 +37,25 @@ https://dev.azure.com/dotnetfinal/_git/dotnetfinal
 ### Visuals
 #### Android
 ##### Splash
-<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/splash-android.jpg" alt="splash-android" width="300"/>   
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/splash-android.jpg" alt="splash-android" width="300"/> 
+
 ##### Home
-<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/home-android.jpg" alt="home-android" width="300"/>  
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/home-android.jpg" alt="home-android" width="300"/>
+
 ##### Exercises
-<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/exercises-android.jpg" alt="exercises-android" width="300"/>  
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/exercises-android.jpg" alt="exercises-android" width="300"/>
+
 ##### Shoulder Abduction (Start)
-<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-start-android.jpg" alt="shoulder-start-android" width="300"/>  
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-start-android.jpg" alt="shoulder-start-android" width="300"/>
+
 ##### Shoulder Abduction (Running)
-<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-start-android.jpg" alt="shoulder-start-android" width="300"/>  
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/shoulder-start-android.jpg" alt="shoulder-start-android" width="300"/>
+
 ##### Result
-<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-android" alt="result-android" width="300"/>  
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-android.jpg" alt="result-android" width="300"/>
+
 ##### Result Description
-<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-description-android.jpg" alt="result-description-android" width="300"/>  
+<img src="https://github.com/fingerhearts/physio-reach-xamarin/blob/master/assets/result-description-android.jpg" alt="result-description-android" width="300"/>
 
 #### iOS
 ##### Home
